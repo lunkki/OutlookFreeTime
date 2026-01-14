@@ -1,0 +1,17 @@
+{
+  "name": "outlook-free-time",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "bin": {
+    "outlook-free-time": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "node-ical": "^0.15.1"
+  }
+}

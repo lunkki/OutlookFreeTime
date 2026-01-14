@@ -1,0 +1,26 @@
+{
+    "icsUrl": "https://outlook.office365.com/owa/calendar/your-calendar-id/calendar.ics",
+    "workDayStart": "08:00",
+    "workDayEnd": "16:00",
+    "timeZone": "Europe/Helsinki",
+    "timeGridMinutes": 30,
+    "icsCacheFile": ".cache/calendar.ics",
+    "cacheMaxAgeMinutes": 5,
+    "excludeTimeWeekly": {
+        "FRI": [
+            {
+                "start": "14:00",
+                "end": "16:00"
+            }
+        ]
+    },
+    "excludeTime": [
+        {
+            "start": "11:00",
+            "end": "12:00"
+        }
+    ],
+    "ignoreSummaries": [
+        "Vapaa"
+    ]
+}
