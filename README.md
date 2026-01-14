@@ -72,10 +72,48 @@ Supported date formats:
 - `YYYY-MM-DD`
  
 Output formats:
-- `--format text` (default): one line per day with `&`-separated slots
+- `--format block` (default): day header followed by indented slots
+- `--format text`: one line per day with `&`-separated slots
 - `--format list`: one slot per line
-- `--format block`: day header followed by indented slots
 - `--format json`: structured output with `date`, `label`, and `slots`
+
+Examples:
+
+`--format block`:
+```
+14.1:
+  08:00-08:30
+  09:00-10:00
+  12:00-13:00
+  15:00-16:00
+```
+
+`--format text`:
+```
+14.1: 08:00-08:30 & 09:00-10:00 & 12:00-13:00 & 15:00-16:00
+```
+
+`--format list`:
+```
+14.1 08:00-08:30
+14.1 09:00-10:00
+14.1 12:00-13:00
+14.1 15:00-16:00
+```
+
+`--format json`:
+```json
+[
+  {
+    "date": "2026-01-14",
+    "label": "14.1",
+    "slots": [
+      { "start": "08:00", "end": "08:30" },
+      { "start": "09:00", "end": "10:00" }
+    ]
+  }
+]
+```
 
 Example output:
 

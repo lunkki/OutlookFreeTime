@@ -31,7 +31,7 @@ function parseArgs(argv) {
     config: 'config.json',
     configProvided: false,
     debug: null,
-    format: 'text',
+    format: 'block',
     help: false,
   };
 
@@ -112,7 +112,7 @@ function showHelp() {
     '  --start, -s    Start date (DD.M, DD.MM.YYYY, or YYYY-MM-DD)',
     '  --end, -e      End date (DD.M, DD.MM.YYYY, or YYYY-MM-DD)',
     '  --config, -c   Path to config.json (default: config.json or OUTLOOK_FREE_TIME_CONFIG)',
-    '  --format, -f   Output format: text, list, block, json (default: text)',
+    '  --format, -f   Output format: text, list, block, json (default: block)',
     '  --debug, -d    Print busy intervals for each day (optionally pass a date)',
   ];
   console.log(helpText.join('\n'));
